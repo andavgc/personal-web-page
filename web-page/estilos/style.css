@@ -110,6 +110,34 @@ body {
     background-color: var(--cor-hover);
 }
 
+.apresentacao__links__navegacao_troll {
+    /* background-color:#853237; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__navegacao_troll:hover {
+    background-color: var(--cor-hover);
+    font-size: 0;
+}
+
+.apresentacao__links__navegacao_troll:hover:after {
+    content: attr(data-hover);
+    font-size: 24px;
+    line-height: 28px;
+}
+
 .apresentacao__imagem {
     width: 25rem;
 }
@@ -122,6 +150,10 @@ body {
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+.rosa {
+    font-size: 10px;
 }
 
 @media (min-width: 1200px) {
